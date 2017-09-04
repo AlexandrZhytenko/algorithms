@@ -16,5 +16,3 @@ def insertion(arr):
             i = i - 1
         arr[i + 1] = key
     return arr
-
-print(insertion([3,4,5,1,6,2]))
