@@ -16,3 +16,9 @@ def insertion(arr):
             i = i - 1
         arr[i + 1] = key
     return arr
+
+# The running time of the algorithm 
+import timeit
+runningtime = timeit.timeit('insertion([i for i in reversed(range(10000))])',\
+                    setup="from __main__ import insertion", number=1)
+# runningtime = 11.9 sec
