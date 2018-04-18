@@ -12,7 +12,7 @@ def binary_search(arr, item):
             start_index = middle + 1
     return None
 
-my_arr = range(1, 1000001)
+my_arr = range(1000001)
 item = 500
 
 from timeit import default_timer
