@@ -14,4 +14,13 @@ def fact(number):
         return 1
     return number * fact(number - 1)
 
-print fact(4)
+print fact(3)
+
+def sum_items(arr):
+    result = arr.pop(0)
+    print result
+    if len(arr) > 0:
+        result = result + sum_items(arr)
+    return result
+
+print sum_items([1,2,3,4])
