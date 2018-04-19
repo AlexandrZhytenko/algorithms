@@ -16,6 +16,7 @@ def fact(number):
 
 print fact(3)
 
+# find sum items in list
 def sum_items(arr):
     result = arr.pop(0)
     print result

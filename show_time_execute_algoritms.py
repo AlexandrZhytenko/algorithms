@@ -13,7 +13,7 @@ def show_time_execute_algoritms(arr_len):
         # O(n!)
         print "For O(n!) where n={} time:".format(i), math.factorial(i) / 10.0, "sec"
 
-# arr_len = [16]
+# arr_len = [10]
 # print show_time_execute_algoritms(arr_len)
 # For O(log n) where n=16 time: 0.4 sec
 # For O(n) where n=16 time: 1.6 sec
