@@ -5,8 +5,6 @@ def understand_recursion(number):
         return "Stop working"
     understand_recursion(number - 1)
 
-print understand_recursion(3)
-
 # stack recursion (factorial)
 def fact(number):
     print number
@@ -14,14 +12,12 @@ def fact(number):
         return 1
     return number * fact(number - 1)
 
-print fact(3)
-
 # find sum items in list
 def sum_items(arr):
     result = arr.pop(0)
-    print result
     if len(arr) > 0:
         result = result + sum_items(arr)
     return result
 
-print sum_items([1,2,3,4])
+if __name__ == "__main__":
+    print sum_items([3, 5, 2, 1, 8, 9, 15])

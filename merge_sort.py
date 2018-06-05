@@ -26,6 +26,7 @@ def merge(left_side, right_side):
             result.append(right_side.pop(0))
     return result
 
-arr = [6, 5, 4, 3, 2, 1]
-# print merge_sort(arr)
-# [1, 2, 3, 4, 5, 6]
+if __name__ == "__main__":
+    arr = [6, 5, 4, 3, 2, 1]
+    print merge_sort(arr)
+    # [1, 2, 3, 4, 5, 6]

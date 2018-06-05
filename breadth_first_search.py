@@ -36,5 +36,5 @@ def find_person_with_name_end(search_queue, graph, letter="m"):
                 searched.append(person)
                 print "searched", searched
     return False
-
-print find_person_with_name_end(search_queue, graph)
+if __name__ == "__main__":
+    print find_person_with_name_end(search_queue, graph)

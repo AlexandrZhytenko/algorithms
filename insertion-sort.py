@@ -13,9 +13,10 @@ def insertion(arr):
         i = j - 1
         while i >= 0 and arr[i] > key:
             arr[i + 1] = arr[i]
-            i = i - 1
+            i -= 1
         arr[i + 1] = key
     return arr
 
-print insertion([3,5,2,1,8,9,15])
-# [1, 2, 3, 5, 8, 9, 15]
+if __name__ == "__main__":
+    # print insertion([3,5,2,1,8,9,15])
+    print insertion([3, 5, 2, 6])

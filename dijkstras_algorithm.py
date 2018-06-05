@@ -74,5 +74,6 @@ import matplotlib.pyplot as plt
 networkx.draw(G, with_labels=True)
 plt.show()
 
-print "But the shortest path is:", networkx.shortest_path(G, "start", "finish")
+if __name__ == "__main__":
+    print "But the shortest path is:", networkx.shortest_path(G, "start", "finish")
 

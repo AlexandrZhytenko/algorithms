@@ -17,3 +17,4 @@ def greatest_common_divisor(number1, number2):
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
+    print greatest_common_divisor(10, 6)

@@ -20,14 +20,10 @@ def selection_sort(arr):
         new_arr.append(arr.pop(smallest))
     return new_arr
 
-arr = [9,1,8,3,7,2]
-
-from timeit import default_timer
-
-start_timer = default_timer()
-print "Result of selection_sort from {}: ".format(arr), selection_sort(arr)
-end_timer = default_timer()
-print "Time taken for execute selection_sort: ", end_timer - start_timer, "sec"
-
-# Result of selection_sort from [9, 1, 8, 3, 7, 2]:  [1, 2, 3, 7, 8, 9]
-# Time taken for execute selection_sort:  8.82679115863e-05 sec
+if __name__ == "__main__":
+    arr = [3, 5, 2, 1, 8, 9, 15]
+    from timeit import default_timer
+    start_timer = default_timer()
+    print "Result of selection_sort from {}: ".format(arr), selection_sort(arr)
+    end_timer = default_timer()
+    print "Time taken for execute selection_sort: ", end_timer - start_timer, "sec"
