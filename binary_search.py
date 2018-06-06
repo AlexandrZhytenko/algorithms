@@ -12,8 +12,8 @@ def binary_search(arr, item):
             start_index = middle + 1
     return None
 if __name__ == "__main__":
-    my_arr = range(1000001)
-    item = 500
+    my_arr = [3, 5, 2, 1, 8, 9, 15, 15, 1, 2, 3, 16]
+    item = 15
     from timeit import default_timer
     start_timer = default_timer()
     binary_search(my_arr, item)
